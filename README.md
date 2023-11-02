@@ -1,6 +1,6 @@
 # Quick Start
 
-TODO: Description
+Easily use OpenZeppelin dependencies in your Ape projects.
 
 ## Dependencies
 
@@ -13,7 +13,7 @@ TODO: Description
 You can install the latest release via [`pip`](https://pypi.org/project/pip/):
 
 ```bash
-pip install <PYPI_NAME>
+pip install ape-openzeppelin
 ```
 
 ### via `setuptools`
@@ -21,14 +21,20 @@ pip install <PYPI_NAME>
 You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
 
 ```bash
-git clone https://github.com/ApeWorX/<PYPI_NAME>.git
-cd <PYPI_NAME>
+git clone https://github.com/antaozoey/ape-openzeppelin.git
+cd ape-openzeppelin
 python3 setup.py install
 ```
 
 ## Quick Usage
 
-TODO: Describe library overview in code
+Use the following dependency type:
+
+```yaml
+dependencies:
+  - name: openzeppelin
+    openzeppelin: 4.6.0
+```
 
 ## Development
 
