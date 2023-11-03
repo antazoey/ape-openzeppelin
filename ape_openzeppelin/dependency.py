@@ -13,7 +13,7 @@ class OpenZeppelinDependency(DependencyAPI):
         return GithubDependency(
             name=self.name,
             version=self.openzeppelin,
-            github=f"OpenZeppelin/openzeppelin-contracts@{self.openzeppelin.lstrip('v')}",
+            github="OpenZeppelin/openzeppelin-contracts",
         )
 
     @property

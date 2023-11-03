@@ -14,7 +14,7 @@ class TestOpenZeppelinDependency:
     def test_uri(self, dependency):
         assert (
             dependency.uri
-            == "https://github.com/OpenZeppelin/openzeppelin-contracts@4.0.0/releases/tag/v4.0.0"
+            == "https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.0.0"
         )
 
     def test_name(self, dependency):
