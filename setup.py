@@ -57,7 +57,9 @@ setup(
     author_email="admin@apeworx.io",
     url="https://github.com/antazoey/ape-openzeppelin",
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        "eth-ape>=0.6.23,<7"
+    ],
     python_requires=">=3.8,<4",
     extras_require=extras_require,
     py_modules=["ape_openzeppelin"],
