@@ -28,11 +28,22 @@ python3 setup.py install
 
 ## Quick Usage
 
-Use the following dependency type:
+Easily use OpenZeppelin in your Ape project by including a dependency like this:
 
 ```yaml
 dependencies:
   - openzeppelin: 4.6.0
+```
+
+You can also change the name of the dependency if needbe.
+You would need to do this if using multiple versions in the same project:
+
+```yaml
+dependencies:
+  - openzeppelin: 3.6.0
+    name: openzeppelin_360
+  - openzeppelin: 4.6.0
+    name: openzeppelin_460
 ```
 
 ## Development
