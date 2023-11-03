@@ -5,6 +5,7 @@ from ethpm_types.utils import AnyUrl
 
 
 class OpenZeppelinDependency(DependencyAPI):
+    name: str = "openzeppelin"
     openzeppelin: str
 
     @property
@@ -12,7 +13,7 @@ class OpenZeppelinDependency(DependencyAPI):
         return GithubDependency(
             name=self.name,
             version=self.openzeppelin,
-            github=f"OpenZeppelin/openzeppelin-contracts@{self.openzeppelin.lstrip('v')}"
+            github=f"OpenZeppelin/openzeppelin-contracts@{self.openzeppelin.lstrip('v')}",
         )
 
     @property

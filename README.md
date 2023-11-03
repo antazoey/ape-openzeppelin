@@ -32,8 +32,7 @@ Use the following dependency type:
 
 ```yaml
 dependencies:
-  - name: openzeppelin
-    openzeppelin: 4.6.0
+  - openzeppelin: 4.6.0
 ```
 
 ## Development
