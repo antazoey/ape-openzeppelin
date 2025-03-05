@@ -10,12 +10,12 @@ extras_require = {
         "hypothesis>=6.2.0,<7.0",  # Strategy-based fuzzer
     ],
     "lint": [
-        "black>=23.10.1,<24",  # Auto-formatter and linter
-        "mypy>=1.6.1,<2",  # Static type analyzer
+        "black>=25.1.0,<26",  # Auto-formatter and linter
+        "mypy>=1.15.0,<2",  # Static type analyzer
         "types-setuptools",  # Needed for mypy type shed
-        "flake8>=6.1.0,<7",  # Style linter
-        "isort>=5.10.1,<6",  # Import sorting linter
-        "mdformat>=0.7.17",  # Auto-formatter for markdown
+        "flake8>=7.1.2,<8",  # Style linter
+        "isort>=6.0.1,<7",  # Import sorting linter
+        "mdformat>=0.7.22",  # Auto-formatter for markdown
         "mdformat-gfm>=0.3.5",  # Needed for formatting GitHub-flavored markdown
         "mdformat-frontmatter>=0.4.1",  # Needed for frontmatters-style headers in issue templates
         "pydantic<2",  # Needed for successful type-check.
@@ -57,8 +57,8 @@ setup(
     author_email="admin@apeworx.io",
     url="https://github.com/antazoey/ape-openzeppelin",
     include_package_data=True,
-    install_requires=["eth-ape>=0.6.23,<7"],
-    python_requires=">=3.8,<4",
+    install_requires=["eth-ape>=0.8.29,<9"],
+    python_requires=">=3.9,<4",
     extras_require=extras_require,
     py_modules=["ape_openzeppelin"],
     license="Apache-2.0",
@@ -74,9 +74,10 @@ setup(
         "Operating System :: MacOS",
         "Operating System :: POSIX",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
     ],
 )

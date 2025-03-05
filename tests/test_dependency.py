@@ -21,4 +21,5 @@ class TestOpenZeppelinDependency:
         assert dependency.name == "openzeppelin"
         # Also show we can change it.
         other = OpenZeppelinDependency(name="MyOpenZeppelin", openzeppelin="4.0.0")
-        assert other.name == "MyOpenZeppelin"
+        expected = "myopenzeppelin"  # PackageName validation lowers them.
+        assert other.name == expected
