@@ -4,7 +4,7 @@ Easily use OpenZeppelin dependencies in your Ape projects.
 
 ## Dependencies
 
-- [python3](https://www.python.org/downloads) version 3.8 up to 3.11.
+- [python3](https://www.python.org/downloads) version 3.9 up to 3.11.
 
 ## Installation
 
@@ -44,6 +44,12 @@ dependencies:
     name: openzeppelin_360
   - openzeppelin: 4.6.0
     name: openzeppelin_460
+```
+
+Each version of openzeppelin from this plugin should compile out-of-the-box.
+
+```shell
+ape pm compile
 ```
 
 ## Development

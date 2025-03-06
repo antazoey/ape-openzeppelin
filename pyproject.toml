@@ -1,6 +1,89 @@
 [build-system]
 requires = ["setuptools>=51.1.1", "wheel", "setuptools_scm[toml]>=5.0"]
 
+[[tool.ape.dependencies]]
+openzeppelin = "3.1.0"
+[[tool.ape.dependencies]]
+openzeppelin = "3.2.0"
+[[tool.ape.dependencies]]
+openzeppelin = "3.3.0"
+[[tool.ape.dependencies]]
+openzeppelin = "3.4.0"
+[[tool.ape.dependencies]]
+openzeppelin = "3.4.1"
+[[tool.ape.dependencies]]
+openzeppelin = "3.4.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.0.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.1.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.2.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.3.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.3.1"
+[[tool.ape.dependencies]]
+openzeppelin = "4.3.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.3.3"
+[[tool.ape.dependencies]]
+openzeppelin = "4.4.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.4.1"
+[[tool.ape.dependencies]]
+openzeppelin = "4.4.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.5.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.5.1"
+[[tool.ape.dependencies]]
+openzeppelin = "4.5.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.6.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.7.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.7.1"
+[[tool.ape.dependencies]]
+openzeppelin = "4.7.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.7.3"
+[[tool.ape.dependencies]]
+openzeppelin = "4.8.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.8.1"
+[[tool.ape.dependencies]]
+openzeppelin = "4.8.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.8.3"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.0"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.1"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.2"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.3"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.4"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.5"
+[[tool.ape.dependencies]]
+openzeppelin = "4.9.6"
+[[tool.ape.dependencies]]
+openzeppelin = "5.0.0"
+[[tool.ape.dependencies]]
+openzeppelin = "5.0.1"
+[[tool.ape.dependencies]]
+openzeppelin = "5.0.2"
+[[tool.ape.dependencies]]
+openzeppelin = "5.1.0"
+[[tool.ape.dependencies]]
+openzeppelin = "5.2.0"
+
 [tool.mypy]
 exclude = "build/"
 plugins = ["pydantic.mypy"]

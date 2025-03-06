@@ -4,6 +4,8 @@ from typing import TYPE_CHECKING
 from ape.api import DependencyAPI
 from ape_pm.dependency import GithubDependency
 
+from ape_openzeppelin.utils import VERSIONS
+
 if TYPE_CHECKING:
     from ethpm_types import PackageManifest
 
@@ -14,11 +16,19 @@ class OpenZeppelinDependency(DependencyAPI):
 
     @property
     def github(self) -> GithubDependency:
-        return GithubDependency(
-            name=self.name,
-            version=self.openzeppelin,
-            github="OpenZeppelin/openzeppelin-contracts",
-        )
+        version = self.openzeppelin
+        data = {"name": self.name, "github": "OpenZeppelin/openzeppelin-contracts"}
+
+        # Some versions are only available via reference.
+        settings: dict = VERSIONS.get(version) or {}
+        version_key = settings.get("version_key", "version")
+        data[version_key] = version
+
+        # Use defaults from plugin to get this version of OZ to work out-of-the-box.
+        if config_override := settings.get("config_override"):
+            self.config_override = data["config_override"] = config_override
+
+        return GithubDependency.model_validate(data)
 
     @property
     def version_id(self) -> str:
