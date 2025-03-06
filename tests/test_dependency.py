@@ -1,6 +1,7 @@
 import pytest
 
 from ape_openzeppelin.dependency import OpenZeppelinDependency
+from ape_openzeppelin.utils import VERSIONS
 
 
 class TestOpenZeppelinDependency:
@@ -23,3 +24,9 @@ class TestOpenZeppelinDependency:
         other = OpenZeppelinDependency(name="MyOpenZeppelin", openzeppelin="4.0.0")
         expected = "myopenzeppelin"  # PackageName validation lowers them.
         assert other.name == expected
+
+    @pytest.mark.parametrize("version", VERSIONS)
+    def test_integration(self, version, project):
+        dependency = project.dependencies.get_dependency("openzeppelin", version)
+        assert dependency.install()
+        assert dependency.compile()

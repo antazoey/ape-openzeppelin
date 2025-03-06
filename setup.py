@@ -8,6 +8,7 @@ extras_require = {
         "pytest-xdist",  # Multi-process runner
         "pytest-cov",  # Coverage analyzer plugin
         "hypothesis>=6.2.0,<7.0",  # Strategy-based fuzzer
+        "ape-solidity",
     ],
     "lint": [
         "black>=25.1.0,<26",  # Auto-formatter and linter
@@ -18,7 +19,6 @@ extras_require = {
         "mdformat>=0.7.22",  # Auto-formatter for markdown
         "mdformat-gfm>=0.3.5",  # Needed for formatting GitHub-flavored markdown
         "mdformat-frontmatter>=0.4.1",  # Needed for frontmatters-style headers in issue templates
-        "pydantic<2",  # Needed for successful type-check.
     ],
     "release": [  # `release` GitHub Action job uses this
         "setuptools",  # Installation tool
